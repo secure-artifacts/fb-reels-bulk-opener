@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "FB Reels 批量开启",
+  "version": "1.0",
+  "description": "一键批量打开 Facebook Reels 创建页，自动识别书签链接，支持自定义数量（1-20个）及正常/极速两种打开模式。",
+  "permissions": [
+    "bookmarks",
+    "tabs",
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/*",
+    "https://business.facebook.com/*"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "FB Reels 批量开启",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
