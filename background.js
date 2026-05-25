@@ -5,7 +5,6 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   const { url, count, speed } = msg;
 
   if (speed === 'fast') {
-    // ── 极速模式：同步 for 循环，一次性全部 fire-and-forget（Pasty 同款） ──
     for (let i = 0; i < count; i++) {
       chrome.tabs.create({ url });
     }
@@ -13,7 +12,6 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     return true;
   }
 
-  // ── 正常模式：每隔 1~1.5 秒打开一个，模拟真人 ──
   const rand = (a, b) => Math.floor(Math.random() * (b - a + 1)) + a;
   (async () => {
     for (let i = 0; i < count; i++) {
