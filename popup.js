@@ -1,7 +1,7 @@
 'use strict';
 
 // ── 常量 ─────────────────────────────────────────────────────
-const CURRENT_VERSION   = '3.0';
+const CURRENT_VERSION   = '3.1';
 const GITHUB_API        = 'https://api.github.com/repos/secure-artifacts/fb-reels-bulk-opener/releases/latest';
 const GITHUB_RELEASES   = 'https://github.com/secure-artifacts/fb-reels-bulk-opener/releases/latest';
 const REELS_TEMPLATE    = 'https://business.facebook.com/latest/reels_composer/?ref=biz_web_content_manager_calendar_view&asset_id=__ID__&context_ref=CONTENT_CALENDAR';
@@ -466,7 +466,7 @@ async function autoDetect() {
         autoDetect();
       }, 10000);
     } else {
-      showStatus('⚠️ 未检测到公共主页编号，请打开 Facebook 专业主页等页面完全加载后重试，或将 Reels 页面加入书签', 'warn');
+      showStatus('⚠️ 未检测到公共主页编号，请打开 Facebook 专业日程本页面完全加载后重试，或将 创建Reels 页面加入书签', 'warn');
       btnGo.disabled = true;
     }
   } catch {

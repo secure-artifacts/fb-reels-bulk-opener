@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FB Reels 批量开启",
-  "version": "3.0",
+  "version": "3.1",
   "description": "自动识别 Facebook 专业主页，一键快速批量打开 Reels 创建页，支持自定义数量。",
   "permissions": [
     "bookmarks",
